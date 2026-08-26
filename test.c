@@ -4,6 +4,7 @@
 
 int main() {
 
+    // Force timezone to Netherlands, since that's where Bob lives
     setenv("TZ", "Europe/Amsterdam", 1);
     tzset();
 

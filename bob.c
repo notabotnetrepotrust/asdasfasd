@@ -20,7 +20,7 @@ int main() {
         int hours = difference / 60;
         int minutes = difference % 60;
 
-        printf("Bobs bedtime is in %d hours and %d minutes.\n",
+        printf("Bob's bedtime is in %d hour(s) and %d minute(s).\n",
                hours, minutes);
 
     } else if (difference == 0) {

